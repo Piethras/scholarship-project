@@ -13,7 +13,7 @@ parser = StrOutputParser()
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful study assistant."),
-    MessagesPlaceholder(variable_name="history"),  # past messages go here
+    MessagesPlaceholder(variable_name="history"),  
     ("human", "{input}")
 ])
 
